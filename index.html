@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Julia e Jefferson | Nosso Casamento</title>
+<meta name="description" content="Julia e Jefferson vão se casar. Saiba mais sobre a celebração e presenteie o casal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="wc-header">
+  <div class="wc-logo">
+    <span class="wc-logo-name">Julia &amp; Jefferson</span>
+    <span class="wc-logo-sub">Nosso Casamento</span>
+  </div>
+  <ul class="wc-nav">
+    <li><a href="#inicio">Início</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#fotos">Fotos</a></li>
+    <li><a href="#presentes">Presentes</a></li>
+    <li><a href="#info">Info</a></li>
+  </ul>
+</header>
+
+<section class="wc-hero" id="inicio" style="--hero-img:url('JuliaeJefferson.png');">
+  <div class="wc-hero-content">
+    <h1>Julia e Jefferson</h1>
+    <p>Entre promessas, sonhos e a certeza de que Deus guiou nossos caminhos, chegou o dia de celebrarmos o amor. Será uma honra compartilhar esse momento com você.</p>
+    <a class="wc-scroll-cue" href="#sobre">Descubra mais<span>⌄</span></a>
+  </div>
+</section>
+
+<section class="wc-section" id="sobre">
+  <div class="wc-eyebrow">Conheça</div>
+  <h2>Sobre Nós</h2>
+  <div class="wc-divider"></div>
+  <div class="wc-about-grid">
+    <div class="wc-reveal wc-about-card">
+      <h3>Jefferson Weber</h3>
+      <p>Jefferson é a calmaria nos dias difíceis, o sorriso fácil e o coração generoso, transformou minha vida e me ensinou que o amor verdadeiro está nos pequenos gestos do dia a dia.</p>
+    </div>
+    <div class="wc-reveal wc-about-card">
+      <h3>Julia Boticelli</h3>
+      <p>Julia é alegria, determinação e amor em sua forma mais genuína. Com sua força e sensibilidade, tornou cada capítulo da nossa história mais especial e fez do nosso caminho um lugar onde sempre vale a pena estar.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wc-section" id="fotos">
+  <div class="wc-eyebrow">Momentos</div>
+  <h2>Nossas Fotos</h2>
+  <p class="wc-section-caption">Alguns instantes da nossa história — arraste ou deixe girar sozinho</p>
+  <div class="wc-3d-scene">
+    <div class="wc-3d-carousel" id="photo-carousel"></div>
+  </div>
+</section>
+
+<section class="wc-section" id="presentes">
+  <div class="wc-eyebrow">Celebre Conosco</div>
+  <h2>Lista de Presentes</h2>
+  <p class="wc-section-caption">Cada gesto de carinho torna esse começo ainda mais especial</p>
+  <div class="wc-gift-grid" id="gift-grid"></div>
+</section>
+
+<section class="wc-section" id="info">
+  <div class="wc-eyebrow">Informações</div>
+  <h2>Local, Data e Horário</h2>
+  <div class="wc-divider"></div>
+
+  <div class="wc-info-grid">
+    <div class="wc-reveal wc-info-card">
+      <div class="wc-info-icon">📅</div>
+      <h3>Data</h3>
+      <p><!-- Troque pela data real --> 12 de dezembro de 2026</p>
+    </div>
+    <div class="wc-reveal wc-info-card">
+      <div class="wc-info-icon">🕰️</div>
+      <h3>Horário</h3>
+      <p><!-- Troque pelo horário real -->Cerimônia às 17h &middot; Recepção às 18h30</p>
+    </div>
+    <div class="wc-reveal wc-info-card">
+      <div class="wc-info-icon">📍</div>
+      <h3>Local</h3>
+      <p>Absolute Business &amp; Hotel</p>
+      <div class="wc-map-links">
+        <a href="https://maps.app.goo.gl/9Vc8K4hbZFfgdYcK7" target="_blank" rel="noopener">Google Maps</a>
+        <a href="https://www.waze.com/ul?ll=-26.9029536,-48.6584797&navigate=yes" target="_blank" rel="noopener">Waze</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mapa interativo (arrastável/com zoom) do Absolute Business & Hotel -->
+  <div class="wc-reveal wc-map-frame">
+    <iframe
+      src="https://www.google.com/maps?q=-26.9029536,-48.6584797&z=16&output=embed"
+      width="100%"
+      height="100%"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+<footer class="wc-footer">
+  <div class="wc-footer-name">Julia &amp; Jefferson</div>
+  <div class="wc-footer-date">Data do casamento</div>
+  <p class="wc-footer-note">Com todo carinho, obrigado por fazer parte da nossa história. ✦</p>
+</footer>
+
+<!-- Lightbox: foto ampliada ao clicar no carrossel -->
+<div class="wc-lightbox" id="lightbox">
+  <button class="wc-lightbox-close" id="lightbox-close" aria-label="Fechar">&times;</button>
+  <img id="lightbox-img" src="" alt="Foto ampliada">
+</div>
+
+<script src="gifts-data.js"></script>
+<script src="photos-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
