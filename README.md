@@ -1,1 +1,0 @@
-# joseprietsch.github.io
