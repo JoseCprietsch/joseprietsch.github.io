@@ -4,7 +4,6 @@
 // pixQr      = arquivo do QR Code correspondente (pasta pix/)
 // linkCartao = link de pagamento Mercado Pago (cartão parcelado)
 const WC_GIFTS = [
-  { titulo: 'Teste', desc: 'Apenas para teste do sistema de pagamento', preco: 20, teste: true, pixCode: '00020126330014br.gov.bcb.pix011107862939930520400005303986540520.005802BR5915Julia Boticelli6015BALNEARIO CAMBO62150511CASAMENTO316304199A', pixQr: 'pix-31.png', linkCartao: 'https://mpago.la/2NAWvFE' },
   { titulo: 'Café da manhã dos noivos', desc: 'Presenteie com um café especial', preco: 250, pixCode: '00020126330014br.gov.bcb.pix0111078629399305204000053039865406250.005802BR5915Julia Boticelli6015BALNEARIO CAMBO62150511CASAMENTO0163044565', pixQr: 'pix-01.png', linkCartao: 'https://mpago.la/2RAcnA5' },
   { titulo: 'Brinde de boas-vindas', desc: 'Um brinde para celebrar o começo', preco: 250, pixCode: '00020126330014br.gov.bcb.pix0111078629399305204000053039865406250.005802BR5915Julia Boticelli6015BALNEARIO CAMBO62150511CASAMENTO026304ABB7', pixQr: 'pix-02.png', linkCartao: 'https://mpago.la/1pAxpZJ' },
   { titulo: 'Doce lembrança do dia', desc: 'Uma doce lembrança desse dia especial', preco: 250, pixCode: '00020126330014br.gov.bcb.pix0111078629399305204000053039865406250.005802BR5915Julia Boticelli6015BALNEARIO CAMBO62150511CASAMENTO22630420F7', pixQr: 'pix-22.png', linkCartao: 'https://mpago.la/14SGiaZ' },
