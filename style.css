@@ -431,6 +431,16 @@ h1, h2, h3{ font-family: 'Cormorant Garamond', serif; font-weight: 300; }
 .wc-gift-body p{ color: var(--muted); font-size: 13.5px; font-weight: 300; line-height: 1.6; flex: 1; }
 .wc-price{ font-family: 'Cormorant Garamond', serif; color: var(--escuro); font-size: 22px; font-weight: 500; }
 
+.wc-gift-badge--teste{
+  color: #B45309;
+  background: rgba(217,119,6,0.12);
+  border-color: rgba(217,119,6,0.35);
+}
+
+.wc-gift-card--teste{
+  border: 1px dashed #D97706;
+}
+
 .wc-btn-row{ display: flex; gap: 8px; margin-top: 6px; }
 
 .wc-btn{
