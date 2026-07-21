@@ -29,14 +29,17 @@
 
     var html = "";
     WC_GIFTS.forEach(function (g, i) {
+      var badge = g.teste
+        ? '<span class="wc-gift-badge wc-gift-badge--teste">⚠ Teste</span>'
+        : '<span class="wc-gift-badge">Presente</span>';
       html +=
-        '<div class="wc-reveal wc-gift-card">' +
+        '<div class="wc-reveal wc-gift-card' + (g.teste ? ' wc-gift-card--teste' : '') + '">' +
         '<div class="wc-gift-img">' +
         '<div class="wc-monogram">J &amp; J</div>' +
         chapelSvg +
         "</div>" +
         '<div class="wc-gift-body">' +
-        '<span class="wc-gift-badge">Presente</span>' +
+        badge +
         "<h3>" + g.titulo + "</h3>" +
         "<p>" + g.desc + "</p>" +
         '<div class="wc-price">R$ ' + formatBRL(g.preco) + "</div>" +
